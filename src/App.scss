@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("static/fonts/HelveticaNowDisplay-Light.eot");
+  src: local("Helvetica Now Display Light"), local("HelveticaNowDisplay-Light"), url("static/fonts/HelveticaNowDisplay-Light.eot?#iefix") format("embedded-opentype"), url("static/fonts/HelveticaNowDisplay-Light.woff2") format("woff2"), url("static/fonts/HelveticaNowDisplay-Light.woff") format("woff"), url("static/fonts/HelveticaNowDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("static/fonts/HelveticaNowDisplay-Bold.eot");
+  src: local("Helvetica Now Display Bold"), local("HelveticaNowDisplay-Bold"), url("static/fonts/HelveticaNowDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("static/fonts/HelveticaNowDisplay-Bold.woff2") format("woff2"), url("static/fonts/HelveticaNowDisplay-Bold.woff") format("woff"), url("static/fonts/HelveticaNowDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("static/fonts/HelveticaNowDisplay-Regular.eot");
+  src: local("Helvetica Now Display Regular"), local("HelveticaNowDisplay-Regular"), url("static/fonts/HelveticaNowDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("static/fonts/HelveticaNowDisplay-Regular.woff2") format("woff2"), url("static/fonts/HelveticaNowDisplay-Regular.woff") format("woff"), url("static/fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    font-family: "Helvetica Now Display";
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.main_gray-background {
+    background-color: #eceff1;
+}
+
+.full-height {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    &--main {
+        display: flex;
+        flex-grow: 1;
+    }
+}
+
+.main-wrapper {
+    width: 100%;
+    &_horizontal-scroll {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        //&::-webkit-scrollbar {
+        //    height: 6px;
+        //}
+        //&::-webkit-scrollbar-track {
+        //  background: #c8e6c9;
+        //}
+        //&::-webkit-scrollbar-thumb {
+        //  background: #1b5e20;
+        //  border-radius: 1rem;
+        //}
+    }
+    &_taskboard {
+        display: flex;
+        flex-direction: column;
+        margin-block: 1rem;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        border: 1px solid #eee;
+        box-shadow: 0 5px 5px 2px #bdbdbd;
+        background-color: #fff;
+    }
+}

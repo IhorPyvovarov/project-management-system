@@ -1,0 +1,23 @@
+.btn {
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    min-width: 251px;
+    background-color: #fb8c00;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 100%;
+    &--center {
+        align-items: center;
+        justify-content: center;
+    }
+    &--gray {
+        background-color: #e0e0e0;
+        color: #616161;
+        transition: background-color .3s ease;
+        &:hover {
+            background-color: #bdbdbd;
+        }
+    }
+}

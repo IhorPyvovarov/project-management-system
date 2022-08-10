@@ -1,0 +1,33 @@
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    &--border {
+        position: absolute;
+        left: calc(50% - 25px);
+        top: calc(50% - 25px);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid transparent;
+        animation: spin 2s infinite;
+        mix-blend-mode: color-dodge;
+        &_green {
+            border-top-color: green;
+        }
+        &_blue {
+            border-right-color: blue;
+            animation-delay: .5s;
+        }
+        &_red {
+            border-left-color: red;
+            animation-delay: 1s;
+        }
+    }
+}

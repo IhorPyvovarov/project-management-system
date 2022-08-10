@@ -1,0 +1,29 @@
+.cards-column {
+    flex-shrink: 0;
+    width: 275px;
+    padding: 0.75rem;
+    background-color: #f5f5f5;
+    border-radius: 0.25rem;
+    &:not(:last-of-type) {
+        margin-right: 1.5rem;
+    }
+    &--head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: #616161;
+    }
+    &--title {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    &--length {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        border: 1px solid #616161;
+        border-radius: 0.25rem;
+        text-align: center;
+    }
+}
